@@ -1,0 +1,54 @@
+{
+  "name": "toolcall",
+  "version": "0.1.0",
+  "description": "FastMCP for JavaScript - Create MCP servers with zero boilerplate",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "llm",
+    "ai",
+    "tools",
+    "function-calling",
+    "anthropic",
+    "claude"
+  ],
+  "author": "Yi Min Yang (https://www.yiminyang.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sceiler/toolcall.git"
+  },
+  "homepage": "https://github.com/sceiler/toolcall",
+  "bugs": {
+    "url": "https://github.com/sceiler/toolcall/issues"
+  },
+  "dependencies": {
+    "zod": "^3.23.0",
+    "zod-to-json-schema": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
